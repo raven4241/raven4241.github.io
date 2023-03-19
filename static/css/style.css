@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Poppins:wght@400;500;600&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.background video{
+  width: 100vw;
+  height: fit-content;
+}
+/*Navbar*/
+
+nav{
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.logo{
+  width: 25%;
+  padding: 2px;
+  margin-left: 30px;
+}
+.logo a img{
+  width: 50%;
+  filter: brightness(3);
+}
+.list{
+  width: 35%;
+  display: flex;
+  align-items: center;
+  
+}
+.list a{
+  text-decoration: none;
+  color: red;
+  font-size: 1.3rem;
+  padding: 30px;
+  margin-left: 8px;
+  border-radius: 30px;
+  font-family: 'Zeyada', cursive;
+  font-weight: 600;
+}
+.list a:hover{
+  animation: navbar 6s linear infinite;
+  filter: brightness(2);
+  color: white;
+  text-shadow: 6px 6px 6px rgba(247, 14, 25, 0.938);
+}
+@keyframes navbar {
+  0%{
+    box-shadow: 0 4px 7px 0 rgba(247, 14, 25, 0.938), 0 4px 7px 0 rgba(247, 14, 25, 0.938);
+  }
+  25%{
+    box-shadow: 0 5px 8px 0 rgba(247, 14, 25, 0.938), 0 5px 8px 0 rgba(247, 14, 25, 0.938);
+  }
+  50%{
+    box-shadow: 0 6px 9px 0 rgba(247, 14, 25, 0.938), 0 6px 9px 0 rgba(247, 14, 25, 0.938);
+  }
+  75%{
+    box-shadow: 0 5px 8px 0 rgba(247, 14, 25, 0.938), 0 5px 8px 0 rgba(247, 14, 25, 0.938);
+  }
+  100%{
+    box-shadow: 0 4px 7px 0 rgba(247, 14, 25, 0.938), 0 4px 7px 0 rgba(247, 14, 25, 0.938);
+  }
+}
+
+
+/*main content*/
+
+.st-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poster{
+  height: 300px;
+  width: 40vw;
+}
+.poster img{
+  width: 40%;
+  border-radius: 25px;
+  
+  animation: poster 3s ease infinite;
+}
+@keyframes poster {
+  0%{
+    box-shadow: 0 6px 10px 0 rgba(247, 14, 25, 0.938), 0 8px 22px 0 rgba(247, 14, 25, 0.938);
+  }
+  20%{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0,14), 0 8px 22px 0 rgba(0,0,0,0.14);
+  }
+  40%{
+    box-shadow: 0 6px 10px 0 rgba(247, 14, 25, 0.938);
+  }
+  60%{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0,14), 0 8px 22px 0 rgba(0,0,0,0.14);
+  }
+  80%{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0,14), 0 8px 22px 0 rgba(0,0,0,0.14);
+  }
+}
+.info{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  width: 60%;
+  height: 100%;
+  text-shadow: 4px 4px 6px rgba(247, 14, 25, 0.938);
+}
+.main-title{
+  width: 100%;
+  color: red;
+  font-family: 'Zeyada', cursive;
+  font-size: 1.4rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-title a{
+  text-decoration: none;
+}
+.main-title:hover{
+  transform: rotate(180deg);
+}
+
+.st-info div{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+.title{
+  width: 100%;
+  color: red;
+  font-family: 'Zeyada', cursive;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.welcome{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  color: aliceblue;
+  gap: 2%;
+}
+.vid1{
+  width: 39%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid-1 span{
+  border-radius: 25px;
+  background-color: aqua;
+  width: 230px;
+  height: 230px;
+}
+.vid-1 video{
+  width: auto;
+  height: 200px;
+}
+.vid1-info{
+  width: 59%;
+  padding: 5px;
+}
+.vid1-info p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
