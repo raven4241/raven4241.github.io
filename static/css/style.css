@@ -13,10 +13,13 @@ body{
   overflow: hidden;
   position: absolute;
   z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .background video{
-  width: 100vw;
-  height: fit-content;
+  width: auto;
+  height: 100%;
 }
 /*Navbar*/
 
